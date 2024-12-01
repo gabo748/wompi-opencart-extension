@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Wompi Payment Integration</name>
+    <code>wompi_payment</code>
+    <version>3.0.3.9</version>
+    <author>Mugiwaras</author>
+    <link>https://dechoto.com/mugiwaras</link>
+
+    
+    <file path="admin/controller/extension/payment/">
+        <operation>
+            <path>admin/controller/extension/payment/</path>
+            <add position="replace">
+                <![CDATA[
+                <file name="wompi.php"/>
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="admin/language/en-gb/extension/payment/">
+        <operation>
+            <path>admin/language/en-gb/extension/payment/</path>
+            <add position="replace">
+                <![CDATA[
+                <file name="wompi.php"/>
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="admin/view/template/extension/payment/">
+        <operation>
+            <path>admin/view/template/extension/payment/</path>
+            <add position="replace">
+                <![CDATA[
+                <file name="wompi.php"/>
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/extension/payment/">
+        <operation>
+            <path>catalog/controller/extension/payment/</path>
+            <add position="replace">
+                <![CDATA[
+                <file name="wompi.php"/>
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="catalog/language/en-gb/extension/payment/">
+        <operation>
+            <path>catalog/language/en-gb/extension/payment/</path>
+            <add position="replace">
+                <![CDATA[
+                <file name="wompi.php"/>
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/default/template/extension/payment/">
+        <operation>
+            <path>catalog/view/theme/default/template/extension/payment/</path>
+            <add position="replace">
+                <![CDATA[
+                <file name="wompi.php"/>
+                ]]>
+            </add>
+        </operation>
+    </file>
+</modification>

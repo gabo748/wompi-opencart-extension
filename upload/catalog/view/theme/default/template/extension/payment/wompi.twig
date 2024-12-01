@@ -1,0 +1,20 @@
+<h2>Paga con Wompi</h2>
+<p>Has click en el boton de pagar, para proceder con el pago.</p>
+<div class="buttons">
+    <div class="pull-right">
+        <button id="button-confirm" class="btn btn-primary">Pagar ahora</button>
+    </div>
+</div>
+<script>
+    document.getElementById('button-confirm').addEventListener('click', function () {
+        $.ajax({
+            url: '{{ action }}',
+            method: 'POST',
+            success: function (response) {
+                if (response.redirect) {
+                    window.location.href = response.redirect;
+                }
+            }
+        });
+    });
+</script>
